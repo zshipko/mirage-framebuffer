@@ -30,9 +30,7 @@ module Make (FB : Framebuffer.S) = struct
 
   let rainbow fb () =
     let open Bimage in
-    let img =
-      Bimage_unix.Magick.read "test_tsdl/rainbow.png" u8 rgb |> Error.unwrap
-    in
+    let img = Bimage_unix.Magick.read "rainbow.png" u8 rgb |> Error.unwrap in
     let module IMG = Framebuffer_bimage.Make (FB) in
     IMG.draw_image fb img; FB.redraw fb
 

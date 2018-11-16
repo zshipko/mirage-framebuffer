@@ -7,8 +7,7 @@
 ))
 (alias
  ((name    runtest)
-  (deps   (test_tsdl.bc))
-  (action (chdir ../..
-            (run ${<})))
+  (deps   (test_tsdl.bc rainbow.png))
+  (action (run ${<}))
  )
 )
