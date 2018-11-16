@@ -1,0 +1,7 @@
+(library
+ ((name framebuffer_bimage)
+  (public_name mirage-framebuffer-bimage)
+  (libraries (lwt rresult mirage-logs logs mirage-framebuffer bimage))
+  (wrapped false)
+  (flags (:standard -safe-string))
+))
